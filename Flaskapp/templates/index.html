@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+​
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../static/style.css">
+​
+    <style>
+        .login {
+            top: 20%;
+        }
+    </style>
+</head>
+<body style ="background-image: url('https://images.unsplash.com/photo-1496469888073-80de7e952517?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'); background-size: 100% 100%;background-repeat:no-repeat;background-size: cover;">
+<h1>Students Performance in Exams</h1>
+<form action ="/login" method ="post">
+<p><label for ="gender"> choose a gender:</label>
+<select name ="g">
+<option  value = "female">female</option>
+<option  value ="male">male</option>
+</select></p>
+<p><label for ="race/ethnicity"> choose a race/ethnicity:</label>
+<select name ="re">
+<option value = "group A">group A</option>
+<option value = "group B">group B</option>
+<option value = "group c">group C</option>
+<option value = "group D">group D</option>
+<option value = "group E">group E</option>
+</select></p>
+<p><label for ="parental level of education"> choose a parental level of education:</label>
+<select name ="edu">
+<option value = "bachelor's degree">bachelor's degree</option>
+<option value = "some college">some college</option>
+<option value = "master's degree">master's degree</option>
+<option value = "associate's degree">associate's degree </option>
+<option value = "high school">high school</option>
+<option value = "some high school">some high school</option>
+</select></p>
+<p><label for ="lunch"> choose a lunch:</label>
+<select  name ="d">
+<option value = "standard">standard</option>
+<option value = "free/reduced">free/reduced</option>
+</select></p>
+<p><label for ="test preparation course"> choose a test preparation course:</label>
+<select  name ="tpc">
+<option value ="none">none</option>
+<option value ="completed">completed</option>
+</select></p>
+<p>math score</p>
+<p><input type = "text" name = "ms"/></p>
+<p>reading score</p>
+<p><input type = "text" name = "rs"/></p>
+<p>writing score</p>
+<p><input type = "text" name = "ws"/></p>
+<p><input type = "submit" value = "click"/></p>
+<p><b>{{y}}</b></p>
+</form>
+</body>
+</html>
+
+
